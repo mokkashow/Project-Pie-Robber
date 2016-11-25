@@ -1,0 +1,45 @@
+1 Open Terminal #1
+
+2 enter in terminal: 
+	roscore 
+
+3 Open Terminal #2
+
+4 enter in terminal: 
+	sudo apt-get install ros-kinetic-turtlebot ros-kinetic-turtlebot-navigation 
+
+5 enter in terminal:
+	rosrun kobuki_ftdi create_udev_rules 
+
+6 Open Terminal #3
+
+7 enter in terminal:
+	roslaunch turtlebot_bringup minimal.launch
+
+8 enter in terminal:
+	roslaunch turtlebot_navigation gmapping_demo.launch
+
+9 Open Terminal #4
+
+10 enter in terminal:
+	rviz
+
+
+Keyboard control, make sure its not surrended by objects (Use in hallway for better result)
+
+1. Open Terminal #1
+
+2. enter in terminal:
+	roslaunch turtlebot_teleop keyboard_teleop.launch
+
+
+Command "follow", which make Kobuki follow ideally moving around.
+
+1. enter in terminal: 
+	minmal
+
+2. enter in terminal:
+	roslaunch turtlebot_follower follower.launch
+
+
+
